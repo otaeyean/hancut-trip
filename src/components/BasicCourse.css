@@ -1,0 +1,12 @@
+/* BasicCourse.css */
+.basic-course-list {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  list-style: decimal inside;
+}
+
+.basic-course-list li {
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}

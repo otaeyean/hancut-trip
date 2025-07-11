@@ -4,6 +4,7 @@ import "./App.css";
 import MainPage from "./pages/MainPage";
 import Header from "./components/Header";
 import RecommendPage from "./pages/RecommendPage";
+import TripInfoPage from "./pages/TripInfoPage";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/recommend" element={<RecommendPage />} />
+        <Route path="/info" element={<TripInfoPage />} />
       </Routes>
     </Router>
   );

@@ -1,12 +1,11 @@
 import { useNavigate } from "react-router-dom";
 import "./MainPage.css";
+import MainTopPhotos from "../components/MainTopPhotos";
+import MainPhotoGallery from "../components/MainPhotoGallery";
 
 function MainPage() {
   const navigate = useNavigate();
-
-  const handleStart = () => {
-    navigate("/recommend");
-  };
+  const handleStart = () => navigate("/recommend");
 
   return (
     <div className="main-bg">
@@ -20,6 +19,14 @@ function MainPage() {
         <button className="start-button" onClick={handleStart}>
           여행 시작하기
         </button>
+      </div>
+
+      <div className="top-photo-section">
+        <MainTopPhotos />
+      </div>
+
+      <div className="photo-gallery-section">
+        <MainPhotoGallery />
       </div>
     </div>
   );
